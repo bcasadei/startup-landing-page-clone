@@ -18,19 +18,23 @@ div {
   background-color: #fff;
 }
 .content {
+    width: 970px;
+    margin: 0 auto;
     padding: 10px 15px;
 }
-.top-nav > .content {
-  width: 970px;
+.top-nav .content {
   height: 70px;
-  margin: 0 auto;
 }
-.top-nav > .content > .links {
+.top-nav .links {
   float: right;
 }
-.top-nav > .content > .links li {
+.top-nav .links li {
   display: inline-block;
   margin-left: 20px;
+}
+.top-nav  .links .active {
+  color: #4c5058;
+  font-weight: 500;
 }
 .links li a {
   font-size: 16px; 
@@ -43,7 +47,4 @@ div {
   color: #4c5058;
   cursor: pointer;
 }
-.top-nav > .links > .active {
-  color: #4c5058;
-  font-weight: 600;
-}
+

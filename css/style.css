@@ -47,4 +47,29 @@ div {
   color: #4c5058;
   cursor: pointer;
 }
+.intro {
+background-image: url('../images/background-image.jpg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 700px;
+  position: relative;
+}
+.intro-content {
+  width: 970px;
+  margin: 0 auto;
+  padding: 10px 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.content h1,
+.content h2,
+.content .button {
+  text-align: center;
+}
 

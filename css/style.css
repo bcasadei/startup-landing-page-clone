@@ -28,7 +28,7 @@ div {
   color: #fff;
   margin-top: -1.5rem;
 }
-.cases h1 {
+.cases h2 {
   font-size: 2.7rem;
   margin-top: 5.3rem;
   color: #1d1e21;
@@ -46,6 +46,9 @@ div {
 /*  Navigation */
 .top-nav {
   background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 }
 .content {
     width: 970px;
@@ -122,14 +125,15 @@ background-image: url('../images/background-image.jpg');
 .cases {
   background-color: #fff;
 }
-.devices ul {
-  padding: 0 0 0 0;
-  margin: 0 0 0 0;
-  border: 0;
-  box-sizing: border-box;
-}
-.cases li {
+.cases .devices {
   display: inline-block;
   text-align: center;
-  width: 33%;
+  width: 33.3333333%;
+}
+.flexbox {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }

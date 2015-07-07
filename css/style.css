@@ -1,16 +1,19 @@
 html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
 body {
-  background-color: LightGray;
+  background-color: #fff;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
-}
-div {
-  border: 1px solid Chocolate;
 }
 
 /* Fonts*/
@@ -42,6 +45,19 @@ div {
   text-align: center;
   font-weight: 400;
 }
+h5.join {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #1d1e21;
+}
+.content .copyright {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #838994;
+  letter-spacing: 0.02rem;
+}
 
 /*  Navigation */
 .top-nav {
@@ -61,7 +77,7 @@ div {
 .top-nav .links {
   float: right;
 }
-.top-nav .links li {
+.top-nav .links > li {
   display: inline-block;
   margin-left: 20px;
 }
@@ -137,3 +153,33 @@ background-image: url('../images/background-image.jpg');
   display: -webkit-flex;     /* NEW - Chrome */
   display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
+.social {
+  text-align: center;
+  background-color: #fff;
+  margin-bottom: 4rem;
+}
+ul.icons {
+  padding-left: 0px;
+}
+.social .icons > li {
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  border: solid 1px #838994;
+  border-radius: 1.25rem;
+  padding: 0;
+  margin: 1em;
+  line-height: 2.5rem;
+  display: inline-block;
+  list-style: none;
+}
+li.twitter {
+  color: #55acee;
+  
+}
+.social > .content > hr {
+  border: 0;
+  border-top: 1px solid #eaebec;
+  margin: 1.313rem 0;
+}
+
